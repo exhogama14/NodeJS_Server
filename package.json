@@ -1,0 +1,24 @@
+{
+  "name": "square-server",
+  "version": "1.0.0",
+  "description": "Node.js version of the Go payment portal server",
+  "main": "server.js",
+  "bin": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "pkg . --targets node18-win-x64 --output dist/square-server.exe"
+  },
+  "pkg": {
+    "scripts": "server.js",
+    "assets": [
+      "template.html"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "devDependencies": {
+    "pkg": "5.8.1"
+  }
+}

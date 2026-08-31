@@ -1,0 +1,18 @@
+[2026-08-31 22:40:56] GET "GET /" from 98.144.146.17
+[2026-08-31 22:40:56] GET "GET /favicon.ico" from 98.144.146.17
+[2026-08-31 22:41:20] POST "POST /submit" from 98.144.146.17
+
+----- FORM SUBMISSION -----
+Amount:        $ 100.00
+Card Number:   9999999999999999
+Expiration:    9999
+CVV:           999
+Name:          jnbiioiu kuhbvuiv
+Address:       ibjiobvhi
+City:          hv;uiv
+State:         vh;ui
+Zip:           hv;uiv
+Phone:         vhuilvvi;u
+IP Address:    98.144.146.17
+----------------------------
+
