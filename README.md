@@ -1,3 +1,9 @@
+
+
+donations are appreciated....
+BTC
+bc1qqxghacjffqm085dltgkvpheewx3ktljfnxs5eg
+
 [FOR EASIEST USE NO INSTALL OR DEPENDCIES ON ANYTHING JUST RUN]  [docker run exhog/square-server:latest]
 
 # Square Payment Portal Server
