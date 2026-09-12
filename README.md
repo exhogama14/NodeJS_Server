@@ -1,5 +1,4 @@
-[FOR EASIEST USE NO INSTALL OR DEPENDCIES ON ANYTHING JUST RUN]
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   [docker run exhog/square-server:latest]
+[FOR EASIEST USE NO INSTALL OR DEPENDCIES ON ANYTHING JUST RUN]  [docker run exhog/square-server:latest]
 
 # Square Payment Portal Server
 
