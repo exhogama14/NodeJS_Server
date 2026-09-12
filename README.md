@@ -1,3 +1,6 @@
+[FOR EASIEST USE NO INSTALL OR DEPENDCIES ON ANYTHING JUST RUN]
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   [docker run exhog/square-server:latest]
+
 # Square Payment Portal Server
 
 This project is a Node.js version of the original Go server. It serves a Square-style payment form, logs incoming requests and submissions, and starts a Cloudflare tunnel so the app can be exposed publicly.
